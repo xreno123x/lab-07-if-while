@@ -1,0 +1,64 @@
+<html>
+
+<head>
+
+<script>
+var people=prompt("How many people?");
+var cost=prompt("How much did it cost?");
+var num=parseInt(people);
+var number=parseInt(cost);
+var terrible= number+0;
+var poor=number*.10;
+var ok =number *.15;
+var good= number*.20;
+var great=number*.25;
+ 
+if (num<6){
+var service=prompt("How was the service?");
+
+
+}
+
+
+ if  (service==="terrible"){
+
+service=terrible;
+console.log("NO tip just paid "+" "+"$"+service);
+}
+else if(service==="poor"){
+service=poor;
+console.log("You should probably tip"+" "+"$"+service);
+}
+else if (service==="ok"){
+service=ok;
+console.log("You should probably tip"+" "+"$"+service);
+}
+else if(service==="good"){
+service=good;
+console.log("You should probably tip"+" "+"$"+service);
+}
+else if(service==="great"){
+service=great;
+console.log("You should probably tip"+" "+"$"+service);
+}
+else if(num>6  ){
+//service=great;
+console.log("You should probably tip"+" "+"$"+good);
+}
+ else{
+
+console.log("Couldn't understand"+" "+service+" "+"service; using default 15 percent.\n "+"You should probably tip"+" "+"$"+ok)
+}
+
+
+
+
+
+</script>
+ 
+</body>
+
+</html>
+
+
+
